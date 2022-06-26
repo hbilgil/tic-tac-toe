@@ -15,5 +15,56 @@ body {
   align-items: center;
   background-color: #ddd;
   min-height: 100%;
-  position: relative;
+  position: relative; /*for fixed and absolute items in web-page, body position is declared relative*/
+}
+
+/*----GAME MODE SIDEBAR----*/
+
+.game-mode {
+  position: absolute; /*the div will have an absolute position compared to other elements in the body*/
+  left: 120px; /*exact place of the div*/
+  top: 300px; /*exact place of the div*/
+  bottom: 0; /*exact place of the div*/
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 40px;
+}
+  
+.player-vs-player,
+.player-vs-robot {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  border: 3px solid black;
+  border-radius: 20px;
+  box-shadow: 3px 3px 12px #aaa8a8;
+  cursor: pointer; /*is expected to act as a link when mouseover*/
+  z-index: 1; /*the div will be in front of the animated elements*/
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+}
+  
+.player-vs-player {
+  background-color: aliceblue;
+}
+  
+.player-vs-robot {
+  background-color:ivory;
+}
+  
+.player-vs-player:hover {
+  background-color: rgb(118, 187, 247);
+}
+  
+.player-vs-robot:hover {
+  background-color:rgb(251, 251, 118);
+}
+  
+img {
+  height: 6rem;
+  width: 6rem;
+  border: none;
 }
