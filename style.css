@@ -135,3 +135,39 @@ img {
 .field:hover {
   background-color: azure;
 }
+
+/*----FOOTER DIV----*/
+
+@font-face { /*allows a custom font to be loaded on web-page*/
+  font-family: 'Sansation Light';
+  src: url(fonts/Sansation\ Light.ttf);
+}
+
+.footer {
+  font-family: 'Sansation Light';
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  padding: 20px;
+  z-index: 1; /*the div will be in front of the animated elements*/
+}
+
+a:link { 
+  text-decoration: none; 
+  color: black;
+}
+
+a:visited { 
+  text-decoration: none; 
+  color: black;
+}
+
+a:hover { 
+  text-decoration: none; 
+  color: fuchsia;
+}
+
+a:active { 
+  text-decoration: none; 
+  color: black;
+}
