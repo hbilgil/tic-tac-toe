@@ -226,3 +226,133 @@ a:active {
 .overlay-window.active {
   display: block;
 }
+
+/*----ANIMATED ELEMENTS----*/
+
+.circles {
+  position: absolute; /*fixed to the WHOLE page*/
+  top: 0; /*fixed to the WHOLE page*/
+  left: 0; /*fixed to the WHOLE page*/
+  width: 100%; /*fixed to the WHOLE page*/
+  height: 100%; /*fixed to the WHOLE page*/
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: fantasy, sans-serif;
+}
+  
+.circles li {
+  position: absolute; /*absolute positioning inside the body*/
+  display: block;
+  list-style: none;
+  animation: animate 20s linear infinite; /*animation property values*/
+  bottom: -150px;
+}
+  
+.circles li:nth-child(1){ /*each animated elements have unique properties too.*/
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+  font-size: 10rem;
+  color:darkkhaki;
+}
+  
+.circles li:nth-child(2){ /*each animated elements have unique properties too.*/
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+  font-size: 3rem;
+  color:indigo;
+}
+  
+.circles li:nth-child(3){ /*each animated elements have unique properties too.*/
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+  font-size: 2rem;
+  color: orange;
+}
+  
+.circles li:nth-child(4){ /*each animated elements have unique properties too.*/
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+  font-size: 5rem;
+  color: purple;
+}
+  
+.circles li:nth-child(5){ /*each animated elements have unique properties too.*/
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+  font-size: 7rem;
+  color: fuchsia;
+}
+  
+.circles li:nth-child(6){ /*each animated elements have unique properties too.*/
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+  font-size: 13rem;
+  color: brown;
+}
+  
+.circles li:nth-child(7){ /*each animated elements have unique properties too.*/
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+  font-size: 13rem;
+  color: blue;
+}
+  
+.circles li:nth-child(8){ /*each animated elements have unique properties too.*/
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+  font-size: 9rem;
+  color: yellow;
+}
+  
+.circles li:nth-child(9){ /*each animated elements have unique properties too.*/
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+  font-size: 3rem;
+  color: green;
+}
+  
+.circles li:nth-child(10){ /*each animated elements have unique properties too.*/
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+  font-size: 8rem;
+  color: red;
+}
+  
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+ }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 0;
+ }
+}
