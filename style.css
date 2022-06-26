@@ -94,3 +94,44 @@ img {
 .caption span.three { /*caption with colored texts*/
   color:lightseagreen;
 }
+
+/*----MAIN DIV----*/
+
+.main {
+  font-family: 'Varela Round', sans-serif;
+  padding: 0 20px;
+  z-index: 1; /*the div will be in front of the animated elements*/
+}
+  
+.info-section {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: blue;
+}
+  
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #ffffff;
+  width: 484px;
+  height: 484px;
+  border: 2px solid #555;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+  
+.field {
+  width: 160px;
+  height: 160px;
+  border: 0.5px solid #ddd;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid #555;
+  font-size: 100px;
+  text-align: center;
+  cursor: pointer; /*is expected to act as a link when mouseover*/
+  user-select: none;
+}
+    
+.field:hover {
+  background-color: azure;
+}
