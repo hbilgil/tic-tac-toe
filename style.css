@@ -68,3 +68,29 @@ img {
   width: 6rem;
   border: none;
 }
+
+/*----HEADER DIV----*/
+
+.header {
+  padding: 20px;
+  z-index: 1; /*the div will be in front of the animated elements*/
+}
+  
+.caption {
+  font-family: fantasy, sans-serif;
+  font-size: 110px;
+  text-align: center;
+  color: red;
+}
+  
+.caption span.one { /*caption with colored texts*/
+  color:blueviolet;
+}
+    
+.caption span.two { /*caption with colored texts*/
+  color:darkorange;
+}
+    
+.caption span.three { /*caption with colored texts*/
+  color:lightseagreen;
+}
