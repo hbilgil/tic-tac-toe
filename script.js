@@ -154,4 +154,17 @@ const gameController = (() => {
 
   }
 
+  const invokeRandomChoice = () => { //allowing the bot make a random choice inside the board
+
+    if (circleTurn  === false) { //prevent recursive invocation as it will be processed when it is bot's turn (as 'O' Class)
+      return
+    }
+      else {
+      let randomField = fieldElements[Math.floor(Math.random() * fieldElements.length)];
+      let result = randomField.click(); //randomly chosen field will be clicked by click() method
+      return result;
+    }
+
+  }
+
 })();
