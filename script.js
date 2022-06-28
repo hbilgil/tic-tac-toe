@@ -174,4 +174,11 @@ const gameController = (() => {
   
   }
 
+  const humanPlay = () => { //allowing the User play against another human player by clicking playerVsPlayerBtn
+
+    clearInterval(myInterval); //disable the interval assigned for invokeRandomChoice function
+    startGame(); //clear ALL data inside the board and refresh the game if any
+  
+  }
+
 })();
