@@ -64,6 +64,8 @@ const displayController = (() => {
 
    }
 
+   return { setBoardHovers, changeMark, placeMark, endGameMessage }; //Functions that will be used out of local scope as a method
+
 })();
 
 
