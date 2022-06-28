@@ -23,6 +23,21 @@ const displayController = (() => {
   const winningMessageTextElement = document.getElementById('endgameMsg');
   const turnMessage = document.getElementById('information');
 
+  //Local Factory Functions
+
+  const setBoardHovers = () => { //allowing to manipulate DOM to add & remove classes for 'X' and 'O' signs
+
+    board.classList.remove(X_CLASS);
+    board.classList.remove(O_CLASS);
+  
+    if (circleTurn) {
+      board.classList.add(O_CLASS);
+    } else {
+      board.classList.add(X_CLASS);
+    }
+  
+  }
+
 })();
 
 
