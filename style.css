@@ -81,7 +81,7 @@ img {
 }
   
 .caption {
-  font-family: fantasy, sans-serif;
+  font-family: 'papyrus', sans-serif;
   font-size: 110px;
   text-align: center;
   color: red;
@@ -318,7 +318,7 @@ a:active {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  font-family: fantasy, sans-serif;
+  font-family: 'papyrus', sans-serif;
   z-index: -1; /*the div will be behind the other elements and divs in webpage*/
 }
   
