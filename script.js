@@ -51,6 +51,19 @@ const displayController = (() => {
 
   }
 
+  const endGameMessage = (draw) => { //allowing to display a final message window informing the User about the winner, looser or a draw by DOM Manipulations
+
+    if(draw) {
+       winningMessageTextElement.textContent = "It's a Draw!"
+     } else {
+       winningMessageTextElement.textContent = `${circleTurn ? "Player O" : "Player X"} Wins!`
+     }
+
+     finalMessageCreator.classList.add('active');
+     overlayWindowCreator.classList.add('active');
+
+   }
+
 })();
 
 
