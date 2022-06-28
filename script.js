@@ -45,6 +45,12 @@ const displayController = (() => {
 
   }
 
+  const placeMark = (field, currentClass) => { //allowing to manipulate DOM to add sign into the gameBoard
+
+    field.classList.add(currentClass)
+
+  }
+
 })();
 
 
