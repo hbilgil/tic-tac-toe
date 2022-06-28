@@ -112,4 +112,12 @@ const gameController = (() => {
   
   }
 
+  const checkDraw = () => { //allowing to check whether the game ended with a draw
+
+    return [...fieldElements].every(cell => { //destructuring assignment is used in order to derive values in fieldsElement array
+        return cell.classList.contains(X_CLASS) || cell.classList.contains(O_CLASS)
+    })
+
+  }
+
 })();
