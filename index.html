@@ -15,38 +15,44 @@
     <div class="game-mode"><!--allowing the user change game mode between player-to-player and player-to-robot-->
 
         <div class="player-vs-player">
+
             <img src="icons/player1.svg" alt="Player 1">
             <span>vs</span>
             <img src="icons/player2.svg" alt="Player 2">
+
         </div>
 
         <div class="player-vs-robot">
+
             <img src="./icons/human.svg" alt="Human">
             <span>vs</span>
             <img src="icons/robot.svg" alt="Computer">
+            
         </div>
 
     </div>
 
     <div class="header">
+
         <h1 class="caption"><span class="one">Tic-</span><span class="two">Tac-</span><span class="three">Toe</span></h1> <!--caption with colored texts-->
+
     </div>
 
     <div class="main">
 
-        <div class="info-section">Player X turn</div> <!--this section will be handled by JavaScript code dynamically-->
+        <div class="info-section" id="information"></div> <!--this section will be handled by JavaScript code dynamically-->
 
-        <div class="grid-container">
+        <div class="grid-container" id="gameBoard">
 
-            <div class="field" data-index="0"></div> <!--numbered cells to be used in JavaScript code-->
-            <div class="field" data-index="1"></div>
-            <div class="field" data-index="2"></div>
-            <div class="field" data-index="3"></div>
-            <div class="field" data-index="4"></div>
-            <div class="field" data-index="5"></div>
-            <div class="field" data-index="6"></div>
-            <div class="field" data-index="7"></div>
-            <div class="field" data-index="8"></div>
+            <div class="field" data-cell></div> <!--numbered cells to be used in JavaScript code-->
+            <div class="field" data-cell></div>
+            <div class="field" data-cell></div>
+            <div class="field" data-cell></div>
+            <div class="field" data-cell></div>
+            <div class="field" data-cell></div>
+            <div class="field" data-cell></div>
+            <div class="field" data-cell></div>
+            <div class="field" data-cell></div>
 
         </div>
 
@@ -66,13 +72,16 @@
     </footer>
 
     <div class="final-message" id="finalMessage"> <!--the final message will be invisible until it is invoked by JavaScript function dynamically-->
+
         <p class="message-title" id="endgameMsg"></p>
-        <button class="btn-restart" id="restartBtn">Play again</button> 
+        <button class="btn-restart" id="restartBtn">RESTART</button> 
+
     </div>
     
-    <div class="overlay-window" id="finalWindow"></div> <!--the overlay window will be invisible until it is invoked by JavaScript function dynamically-->
+    <div class="overlay-window" id="overlayWindow"></div> <!--the overlay window will be invisible until it is invoked by JavaScript function dynamically-->
 
     <ul class="circles"> <!--the circles are animated by CSS code for a better UI-->
+
         <li>X</li>
         <li>O</li>
         <li>X</li>
@@ -83,6 +92,7 @@
         <li>O</li>
         <li>X</li>
         <li>O</li>
+
     </ul>
 
 </body>
