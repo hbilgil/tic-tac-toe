@@ -120,4 +120,22 @@ const gameController = (() => {
 
   }
 
+  const pushClick = (e) => { //allowing the players or bot to put signs inside the board when mouse clicked
+
+    const field = e.target; //the exact field element when clicked
+    const currentClass = circleTurn ? O_CLASS : X_CLASS; // ternary operator to decide whose turn it is
+    
+    displayController.placeMark(field, currentClass); //placeMark method is called which is nested in the displayController to place X or O sign
+  
+    if(checkWinner(currentClass)){
+      displayController.endGameMessage(false); //endGameMessage method is called which is nested in the displayController with false property if NOT a draw
+    } else if(checkDraw()) {
+      displayController.endGameMessage(true); //endGameMessage method is called which is nested in the displayController with true property if a draw
+    } else {
+      displayController.changeMark() //changeMark method is called which is nested in the displayController, if neither a win Nor a draw
+      displayController.setBoardHovers() //setBoardHovers method is called which is nested in the displayController, if neither a win Nor a draw
+    }
+
+  }
+
 })();
