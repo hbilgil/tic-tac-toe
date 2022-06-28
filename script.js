@@ -89,4 +89,14 @@ const gameController = (() => {
 
   let myInterval; //empty variable declaration which will be changed accordingly inside the functions
 
+  //Local UI Variable Declarations
+
+  const playerVsPlayerBtn = document.querySelector('.player-vs-player');
+  const playerVsBotBtn = document.querySelector('.player-vs-robot');
+  const fieldElements = document.querySelectorAll('[data-cell]');
+  const restartBtn = document.getElementById('restartBtn');
+  const overlayWindowRemover = document.getElementById('overlayWindow');
+  const finalMessageRemover = document.getElementById('finalMessage');
+  const turnMessageInitializer = document.getElementById('information');
+
 })();
