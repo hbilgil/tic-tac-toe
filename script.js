@@ -138,4 +138,20 @@ const gameController = (() => {
 
   }
 
+  const startGame = () => { //allowing to clear ALL data inside the board and refresh the game
+
+    circleTurn = false; // will return the starting mark as "X" every time a new game restarts
+    fieldElements.forEach(cell => {
+    cell.classList.remove(X_CLASS)
+    cell.classList.remove(O_CLASS)
+    cell.removeEventListener('click', pushClick)
+    cell.addEventListener('click', pushClick, { once: true })}) //the click will do the event once and will not let the user do it again!//
+    
+    displayController.setBoardHovers(); //setBoardHovers method is called which is nested in the displayController
+    finalMessageRemover.classList.remove('active')
+    overlayWindowRemover.classList.remove('active')
+    return turnMessageInitializer.textContent = `${circleTurn ? "Player O" : "Player X"}` + "' s turn"; //X is always the game opener
+
+  }
+
 })();
