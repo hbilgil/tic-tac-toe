@@ -191,3 +191,5 @@ const gameController = (() => {
   return { startGame }; //Functions that will be used out of local scope as a method
 
 })();
+
+gameController.startGame(); //onload function invocation apart from restart to clear ALL data inside the board and refresh the game if any
