@@ -15,6 +15,13 @@ let  circleTurn = false; // Boolean variable & "X" is the game opener mark, so "
 
 const displayController = (() => {
 
+  //Local UI Variable Declarations
+
+  const board = document.getElementById('gameBoard');
+  const finalMessageCreator = document.getElementById('finalMessage');
+  const overlayWindowCreator = document.getElementById('overlayWindow');
+  const winningMessageTextElement = document.getElementById('endgameMsg');
+  const turnMessage = document.getElementById('information');
 
 })();
 
