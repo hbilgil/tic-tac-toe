@@ -181,4 +181,11 @@ const gameController = (() => {
   
   }
 
+  //Local Event Listeners
+ 
+  playerVsPlayerBtn.addEventListener('click', humanPlay);
+  playerVsBotBtn.addEventListener('click', computerPlay);
+  restartBtn.addEventListener('click', startGame);
+  overlayWindowRemover.addEventListener('click', startGame);
+
 })();
