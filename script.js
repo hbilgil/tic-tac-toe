@@ -167,4 +167,11 @@ const gameController = (() => {
 
   }
 
+  const computerPlay = () => { //allowing the User play against bot by clicking playerVsBotBtn
+
+    myInterval = setInterval(invokeRandomChoice, 100); //invokeRandomChoice function will be repeated again and again in an interval when playing against bot
+    startGame(); //clear ALL data inside the board and refresh the game if any
+  
+  }
+
 })();
