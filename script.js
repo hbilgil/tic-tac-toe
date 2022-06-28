@@ -188,4 +188,6 @@ const gameController = (() => {
   restartBtn.addEventListener('click', startGame);
   overlayWindowRemover.addEventListener('click', startGame);
 
+  return { startGame }; //Functions that will be used out of local scope as a method
+
 })();
