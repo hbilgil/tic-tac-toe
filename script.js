@@ -38,6 +38,13 @@ const displayController = (() => {
   
   }
 
+  const changeMark = () => { //allowing to change playing sign and informing the User about which sign is able to make move
+
+    circleTurn = ! circleTurn
+    turnMessage.textContent = `${circleTurn ? "Player O" : "Player X"}` + "' s turn";
+
+  }
+
 })();
 
 
