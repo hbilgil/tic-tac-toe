@@ -99,4 +99,17 @@ const gameController = (() => {
   const finalMessageRemover = document.getElementById('finalMessage');
   const turnMessageInitializer = document.getElementById('information');
 
+  //Local Factory Functions
+
+  const checkWinner = (currentClass) => {  //allowing to check whether the game has a winner
+
+    return WINNING_COMBINATIONS.some(combination => {
+  
+      return combination.every(index => {
+          return fieldElements[index].classList.contains(currentClass)
+      })
+    })
+  
+  }
+
 })();
